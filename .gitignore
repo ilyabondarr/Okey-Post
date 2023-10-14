@@ -1,0 +1,6 @@
+node_modules
+reactSettings.txt
+.babelrc
+package-lock.json
+package.json
+/dist
