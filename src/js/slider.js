@@ -1,4 +1,3 @@
-
 let sliderContainer = document.querySelector('.slider-container');
 let sliderWrapper = document.querySelector('.slider-wrapper');
 let slider = document.querySelectorAll('.slider');
@@ -17,7 +16,7 @@ if (window.innerWidth <= 1100) {
         },
         breakpoints: {
             1100: {
-                slidesPerView: 3
+                slidesPerView: 5
             },
             460: {
                 slidesPerView: 2
