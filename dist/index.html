@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <title>OkeyPost</title>
+<script defer="defer" src="./js/main.js"></script><link href="./css/main.css" rel="stylesheet"></head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <a href="index.html" class="header__logo">
+                        <svg width="190" height="48" viewBox="0 0 190 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M80.6031 31.2289C78.5011 33.311 75.9427 34.352 72.9279 34.352C69.9131 34.352 67.3547 33.311 65.2526 31.2289C63.1506 29.1469 62.0996 26.5785 62.0996 23.5237C62.0996 20.4689 63.1506 17.9005 65.2526 15.8185C67.3547 13.7365 69.9131 12.6954 72.9279 12.6954C75.9427 12.6954 78.5011 13.7365 80.6031 15.8185C82.7051 17.9005 83.7561 20.4689 83.7561 23.5237C83.7561 26.5785 82.7051 29.1469 80.6031 31.2289ZM68.5989 27.9859C69.7598 29.1352 71.2023 29.7115 72.9279 29.7115C74.6535 29.7115 76.0959 29.1369 77.2569 27.9859C78.4178 26.835 78.9974 25.3476 78.9974 23.5237C78.9974 21.6982 78.4178 20.2108 77.2569 19.0615C76.0959 17.9122 74.6535 17.3359 72.9279 17.3359C71.2023 17.3359 69.7598 17.9105 68.5989 19.0615C67.438 20.2124 66.8583 21.6998 66.8583 23.5237C66.8583 25.3476 67.438 26.8367 68.5989 27.9859ZM100.567 33.9356H95.5089L90.7485 27.3747V33.9356H86.2862V13.1102H90.7485V25.5758L95.2107 19.0598H100.417L95.0025 26.4969L100.566 33.9339L100.567 33.9356ZM105.298 28.2824C105.814 29.6716 107.003 30.3645 108.867 30.3645C110.076 30.3645 111.029 29.988 111.724 29.2335L115.293 31.2856C113.826 33.3276 111.664 34.3503 108.807 34.3503C106.309 34.3503 104.31 33.6075 102.813 32.1184C101.315 30.631 100.567 28.7571 100.567 26.4952C100.567 24.2533 101.307 22.3844 102.784 20.887C104.262 19.3896 106.161 18.6401 108.481 18.6401C110.643 18.6401 112.443 19.3896 113.881 20.887C115.318 22.3844 116.038 24.2533 116.038 26.4952C116.038 27.1298 115.978 27.7244 115.86 28.2808H105.298V28.2824ZM105.208 24.9512H111.604C111.167 23.3838 110.116 22.601 108.451 22.601C106.725 22.601 105.644 23.3838 105.208 24.9512ZM127.342 19.0598H132.103L127.014 33.4892C126.181 35.8294 125.085 37.505 123.726 38.5177C122.367 39.5288 120.637 39.9852 118.535 39.8852V35.7195C119.566 35.7195 120.36 35.5362 120.915 35.1698C121.469 34.8034 121.916 34.1638 122.254 33.251L116.333 19.0598H121.241L124.544 28.1642L127.341 19.0598H127.342ZM163.43 32.0767C161.903 33.5941 160.039 34.352 157.837 34.352C155.635 34.352 153.771 33.5941 152.244 32.0767C150.716 30.5593 149.953 28.7005 149.953 26.4985C149.953 24.2966 150.716 22.4377 152.244 20.9203C153.771 19.4029 155.635 18.6451 157.837 18.6451C160.039 18.6451 161.903 19.4029 163.43 20.9203C164.957 22.4377 165.72 24.2966 165.72 26.4985C165.72 28.7005 164.956 30.5593 163.43 32.0767ZM155.397 29.027C156.051 29.6816 156.864 30.008 157.837 30.008C158.81 30.008 159.622 29.6816 160.277 29.027C160.932 28.3724 161.258 27.5296 161.258 26.4985C161.258 25.4675 160.932 24.6247 160.277 23.9701C159.622 23.3155 158.81 22.989 157.837 22.989C156.864 22.989 156.051 23.3155 155.397 23.9701C154.742 24.6247 154.416 25.4675 154.416 26.4985C154.416 27.5296 154.742 28.3724 155.397 29.027ZM172.176 23.4038C172.176 23.7019 172.429 23.9435 172.934 24.1333C173.44 24.3216 174.05 24.5098 174.763 24.698C175.477 24.8862 176.19 25.1294 176.905 25.4275C177.619 25.7257 178.229 26.2154 178.734 26.9C179.24 27.5845 179.492 28.4423 179.492 29.4734C179.492 31.0807 178.897 32.2949 177.706 33.1178C176.517 33.9406 175.048 34.352 173.304 34.352C170.169 34.352 168.037 33.1727 166.908 30.8125L170.775 28.6106C171.172 29.7815 172.015 30.3661 173.304 30.3661C174.375 30.3661 174.911 30.058 174.911 29.4434C174.911 29.1469 174.658 28.8987 174.153 28.7005C173.647 28.5023 173.037 28.3091 172.324 28.1209C171.61 27.9326 170.897 27.6845 170.182 27.3763C169.468 27.0682 168.858 26.5885 168.354 25.9339C167.847 25.2793 167.596 24.4765 167.596 23.5237C167.596 21.9763 168.155 20.7771 169.276 19.9243C170.397 19.0715 171.781 18.6451 173.427 18.6451C174.656 18.6451 175.777 18.9182 176.79 19.4629C177.801 20.0076 178.616 20.7971 179.23 21.8281L175.423 23.8802C174.946 23.0074 174.282 22.571 173.429 22.571C172.596 22.571 172.18 22.8491 172.18 23.4038H172.176ZM189.997 23.3438H186.932V28.6106C186.932 29.2052 187.17 29.5816 187.647 29.7415C188.123 29.8998 188.906 29.9497 189.997 29.8898V33.9356C187.16 34.2337 185.196 33.9606 184.105 33.1178C183.014 32.2749 182.47 30.7725 182.47 28.6106V23.3438H180.09V19.0598H182.47V16.2332L186.932 14.8941V19.0598H189.997V23.3438ZM141.175 13.1085C143.219 13.1085 144.943 13.8031 146.352 15.1906C147.76 16.5797 148.464 18.2653 148.464 20.2474C148.464 22.2312 147.76 23.9168 146.352 25.3059C144.943 26.6951 143.219 27.388 141.175 27.388H138.052V33.9339H133.292V13.1085H141.175ZM141.175 22.9258C141.908 22.9258 142.515 22.6676 142.989 22.1529C143.466 21.6366 143.704 21.002 143.704 20.2491C143.704 19.4946 143.466 18.8599 142.989 18.3453C142.513 17.8306 141.908 17.5724 141.175 17.5724H138.052V22.9274H141.175V22.9258Z" fill="#fff"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8852 0C37.077 0 47.7703 10.6934 47.7703 23.8852C47.7703 37.077 37.077 47.7703 23.8852 47.7703C10.6934 47.7703 0 37.077 0 23.8852C0 10.6934 10.6934 0 23.8852 0ZM23.8852 9.30089C31.9401 9.30089 38.4694 15.8302 38.4694 23.8852C38.4694 31.9401 31.9401 38.4694 23.8852 38.4694C15.8302 38.4694 9.30089 31.9401 9.30089 23.8852C9.30089 15.8302 15.8302 9.30089 23.8852 9.30089Z" fill="url(#paint0_linear_179_2120)"/>
+                            <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M40.4714 41.0711C38.4743 42.9983 36.1408 44.5823 33.5707 45.7232L26.6816 38.1996C29.5832 37.6366 32.1766 36.2142 34.1886 34.2087L40.4731 41.0711H40.4714Z" fill="#fff"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M51.0881 0.253169L42.3568 8.74123C40.2765 6.20614 37.6831 4.10577 34.7366 2.60004L37.1684 0.251503H51.0881V0.253169ZM35.6493 15.2622L27.3645 23.3155L49.8855 47.1773H36.5921L13.693 22.9158L27.3628 9.71895C30.7391 10.5451 33.6523 12.5455 35.6477 15.2622H35.6493Z" fill="url(#paint1_linear_179_2120)"/>
+                            <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M26.6083 10.4485C29.9795 11.2846 32.8877 13.2917 34.8748 16.015L35.6494 15.2622C33.6539 12.5455 30.7407 10.5451 27.3645 9.71895L26.6083 10.4485Z" fill="#1F2428"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_179_2120" x1="0.612057" y1="47.7703" x2="54.7001" y2="37.8739" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#5B52A3"/>
+                                    <stop offset="1" stop-color="#40B8EA"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_179_2120" x1="13.693" y1="22.9157" x2="49.9521" y2="22.9157" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#54E1AB"/>
+                                    <stop offset="1" stop-color="#7EEEC1"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <nav class="header__menu burger-menu">
+                        <a href="./kak-pokupat.html" class="header__menu-link">Как покупать</a>
+                        <a href="./sales.html" class="header__menu-link">Распродажи</a>
+                        <a href="./prices.html" class="header__menu-link">Цены</a>
+                        <a href="./chasto-zadavaemye-voprosy.html" class="header__menu-link">Помощь</a>
+                        <a href="./partnerskaja-programma.html" class="header__menu-link">Бонусы</a>
+                        <a href="./blog.html" class="header__menu-link">Блог</a>
+                        <a href="./magaziny.html" class="header__menu-link">Магазины</a>
+                    </nav>
+                    <div class="header__login burger-sign">
+                        <a href="#" class="header__text">
+                            <img src="./images/User..png" alt="user" class="header__img">
+                            Вход
+                        </a>
+                        <a href="#" class="header__link-button green-button">Связаться с нами</a>
+                    </div>
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="second-container">
+                    <div class="hero__bg card">
+                        <div class="container">
+                            <div class="hero__row">
+                                <div class="hero__text-block">
+                                    <h1 class="hero__title card-title">Доставка товаров из Великобритании в Россию</h1>
+                                    <div class="hero__text">Начните экономить до 80% на шопинге. Регистрируйтесь в
+                                        OkeyPost, чтобы покупать со скидками в UK одежду, обувь, гаджеты известных
+                                        брендов и безопасно отправлять вещи в Россию.
+                                    </div>
+                                    <a href="#" class="main-button green-button">Получить адрес в UK</a>
+                                </div>
+                                <div class="hero__img-block">
+                                    <img src="./images/hero__img..png" alt="" class="hero__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="categories">
+                <div class="container">
+                    <h2 class="categories__title title">Насколько выгодно покупать?</h2>
+                </div>
+            </section>
+            <div class="slider-container slider-active">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="slider-block">
+                            <img src="./images/c-1..png" alt="" class="categories__img">
+                            <div class="categories__text">Одежда</div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-block">
+                            <img src="./images/c-2..png" alt="" class="categories__img">
+                            <div class="categories__text">Электроника</div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-block">
+                            <img src="./images/c-3..png" alt="" class="categories__img">
+                            <div class="categories__text">Аксессуары</div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-block">
+                            <img src="./images/c-4..png" alt="" class="categories__img">
+                            <div class="categories__text">Для детей</div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-block">
+                            <img src="./images/c-5..png" alt="" class="categories__img">
+                            <div class="categories__text">Для спорта</div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-block">
+                            <img src="./images/c-6..png" alt="" class="categories__img">
+                            <div class="categories__text">Косметика</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-btn-prev"></div>
+                <div class="swiper-btn-next"></div>
+            </div>
+            <section class="product">
+                <div class="container">
+                    <div class="product__grid">
+                        <div class="product__left-block">
+                            <h2 class="product__main-text product__main-text-box">Columbia Barlow Pass 550 Turbodown
+                                Jacket</h2>
+                            <div class="product__row">
+                                <img src="./images/russia..png" alt="" class="product__flag-img">
+                                <div class="product__child-text">
+                                    Цена в России
+                                    <div class="product__main-text">7891,46₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__main-img-container">
+                            <img src="./images/jacket..png" alt="" class="product__main-img slider-img">
+                        </div>
+                        <div class="product__right-block">
+                            <h2 class="product__main-text product__main-text-box product__main--dn">Доставка одежды из Великобритании от
+                                <span class="product__main-text product__main-text--green">£7.79</span>
+                            </h2>
+                            <div class="product__row">
+                                <img src="./images/britan..png" alt="" class="product__flag-img">
+                                <div class="product__child-text">
+                                    Цена в UK
+                                    <div class="product__main-text product__main-text--green">£80.62</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__flex-slider flex-row">
+                        <div class="product__js-left-block">
+                            <div class="product__js-img-box">
+                                <img src="./images/t-shirt..png" alt="" class="product__js-img slider-img">
+                            </div>
+                            <svg class="product__arrow prew-arrow" width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM36 9H1V7H36V9Z" fill="#01CD7D"/>
+                            </svg>
+                        </div>
+                        <div class="product__center-block">
+                            <div class="product__child-text product__child-text--center">Срок доставки примерно 10 дней
+                            </div>
+                            <div class="product__main-text product__child-text--center">Вы экономите до <span class="product__main-text product__main-text--green">$119.56</span></div>
+                        </div>
+                        <div class="product__js-right-block">
+                            <svg class="product__arrow next-arrow" width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.7071 8.70711C36.0976 8.31658 36.0976 7.68342 35.7071 7.29289L29.3431 0.928932C28.9526 0.538408 28.3195 0.538408 27.9289 0.928932C27.5384 1.31946 27.5384 1.95262 27.9289 2.34315L33.5858 8L27.9289 13.6569C27.5384 14.0474 27.5384 14.6805 27.9289 15.0711C28.3195 15.4616 28.9526 15.4616 29.3431 15.0711L35.7071 8.70711ZM0 9H35V7H0V9Z" fill="#01CD7D"/>
+                            </svg>
+                            <div class="product__js-img-box">
+                                <img src="./images/jeans..png" alt="" class="product__js-img slider-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                    <div class="flex-row advantages__row">
+                        <div class="advantages__box">
+                            <img src="./images/advantages-1..png" alt="" class="advantages__img">
+                            <div class="advantages__text">Экономия <br> до 70%</div>
+                        </div>
+                        <div class="advantages__box">
+                            <img src="./images/advantages-2..png" alt="" class="advantages__img">
+                            <div class="advantages__text">Только подлинная продукция</div>
+                        </div>
+                        <div class="advantages__box">
+                            <img src="./images/advantages-3..png" alt="" class="advantages__img">
+                            <div class="advantages__text">Оперативная доставка</div>
+                        </div>
+                        <div class="advantages__box">
+                            <img src="./images/advantages-4..png" alt="" class="advantages__img">
+                            <div class="advantages__text">Огромный выбор товаров</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="eng-store">
+                <div class="second-container">
+                    <div class="eng-store__bg card">
+                        <div class="container">
+                            <div class="eng-store__row">
+                                <div class="eng-store__img-container">
+                                    <img src="./images/eng-store-1..png" alt="" class="eng-store__img">
+                                </div>
+                                <div class="eng-store__box">
+                                    <h2 class="eng-store__title card-title">Поручите нашим мастерам шопинга оформить заказы в
+                                        английских магазинах и освободите время для более важных дел.</h2>
+                                    <div class="eng-store__text">Такой способ покупки также подойдёт, если магазин
+                                        принимает только английские карты.</div>
+                                    <a href="#" class="main-button green-button">Попробовать</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="delivery">
+                <div class="container">
+                    <h2 class="delivery__title title">OkeyPost удобная и быстрая доставка посылок из Великобритании </h2>
+                    <div class="delivery__text">Рассчитайте стоимость доставки из Англии к вам домой. Мы получим ваши
+                        посылки на складе, при необходимости объединим несколько доставок в одну и отправим их к вам
+                        надежно упакованными.</div>
+                    <div class="flex-row">
+                        <div class="delivery__box">
+                            <form class="delivery__form">
+                                <div class="delivery__grid">
+                                    <div class="delivery__items delivery__items-1">
+                                        <div class="delivery__subtitle">Страна:</div>
+                                        <svg class="delivery__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 22.75C18.3848 22.75 22.75 18.3848 22.75 13C22.75 7.61522 18.3848 3.25 13 3.25C7.61522 3.25 3.25 7.61522 3.25 13C3.25 18.3848 7.61522 22.75 13 22.75Z" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21.7511 17.3036L16.2377 13.9126C16.141 13.8531 16.033 13.8146 15.9206 13.7994L13.603 13.487C13.429 13.4636 13.2521 13.4971 13.0987 13.5827C12.9454 13.6682 12.8238 13.8011 12.7524 13.9615L11.3611 17.0834C11.2964 17.2285 11.2757 17.3895 11.3015 17.5463C11.3274 17.7032 11.3987 17.849 11.5066 17.9657L13.416 20.0309C13.5025 20.1245 13.5659 20.2372 13.6008 20.3598C13.6357 20.4825 13.6413 20.6116 13.6171 20.7368L13.2282 22.7474" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.59668 5.64746L5.68828 7.79548C5.60729 7.98701 5.60281 8.2023 5.67577 8.39703L6.84281 11.5118C6.8906 11.6393 6.96969 11.7528 7.07281 11.8418C7.17592 11.9308 7.29976 11.9924 7.43292 12.021L9.6094 12.4888C9.73017 12.5148 9.84343 12.5679 9.94057 12.6443C10.0377 12.7206 10.1162 12.818 10.17 12.9292L10.5565 13.7277C10.623 13.8651 10.7269 13.981 10.8563 14.0621C10.9856 14.1432 11.1352 14.1862 11.2878 14.1862H12.6521" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.4841 3.56982L16.432 5.26779C16.5216 5.4283 16.5542 5.61446 16.5243 5.79586C16.4944 5.97725 16.4039 6.14316 16.2676 6.26647L13.5345 8.73825C13.4881 8.7802 13.437 8.81665 13.3822 8.84689L12.1389 9.53348C12.0187 9.5999 11.8835 9.63473 11.7462 9.63473H9.57828C9.41841 9.63473 9.26209 9.68189 9.1289 9.77031C8.99571 9.85874 8.89156 9.98448 8.8295 10.1318L7.98376 12.1395" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <select name="Страна" class="delivery__select">
+
+                                            <option class="delivery__option" value="Россия">
+                                                Россия
+                                            </option>
+                                            <option class="delivery__option" value="UK">UK</option>
+                                        </select>
+                                    </div>
+                                    <div class="delivery__items delivery__items-2">
+                                        <div class="delivery__subtitle">Город:</div>
+                                        <svg class="delivery__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.625 21.9358H24.375" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.6244 21.9358V4.06079C14.6244 3.8453 14.5388 3.63864 14.3864 3.48627C14.234 3.33389 14.0274 3.24829 13.8119 3.24829H4.06189C3.8464 3.24829 3.63974 3.33389 3.48737 3.48627C3.33499 3.63864 3.24939 3.8453 3.24939 4.06079V21.9358" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22.7494 21.9358V10.5608C22.7494 10.3453 22.6638 10.1386 22.5114 9.98627C22.359 9.83389 22.1524 9.74829 21.9369 9.74829H14.6244" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.49939 7.31079H9.74939" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.12439 13.8108H11.3744" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.49939 17.8733H9.74939" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M17.8744 17.8733H19.4994" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M17.8744 13.8108H19.4994" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="Москва" class="delivery__input">
+                                    </div>
+                                    <div class="delivery__items delivery__items-3">
+                                        <div class="delivery__subtitle">Индекс:</div>
+                                        <svg class="delivery__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.375 11.375H17.875" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.375 14.625H17.875" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21.125 4.0625H4.875C4.42627 4.0625 4.0625 4.42627 4.0625 4.875V21.125C4.0625 21.5737 4.42627 21.9375 4.875 21.9375H21.125C21.5737 21.9375 21.9375 21.5737 21.9375 21.125V4.875C21.9375 4.42627 21.5737 4.0625 21.125 4.0625Z" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.125 4.0625V21.9375" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="Введите индекс" class="delivery__input">
+                                    </div>
+                                    <div class="delivery__items delivery__items-4">
+                                        <div class="delivery__subtitle">Вес посылки:</div>
+                                        <svg class="delivery__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.9375 5.6875H6.5C6.05127 5.6875 5.6875 6.05127 5.6875 6.5V19.5C5.6875 19.9487 6.05127 20.3125 6.5 20.3125H8.9375C9.38623 20.3125 9.75 19.9487 9.75 19.5V6.5C9.75 6.05127 9.38623 5.6875 8.9375 5.6875Z" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.5 5.6875H17.0625C16.6138 5.6875 16.25 6.05127 16.25 6.5V19.5C16.25 19.9487 16.6138 20.3125 17.0625 20.3125H19.5C19.9487 20.3125 20.3125 19.9487 20.3125 19.5V6.5C20.3125 6.05127 19.9487 5.6875 19.5 5.6875Z" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20.3125 8.125H22.75C22.9655 8.125 23.1722 8.2106 23.3245 8.36298C23.4769 8.51535 23.5625 8.72201 23.5625 8.9375V17.0625C23.5625 17.278 23.4769 17.4847 23.3245 17.637C23.1722 17.7894 22.9655 17.875 22.75 17.875H20.3125" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.6875 17.875H3.25C3.03451 17.875 2.82785 17.7894 2.67548 17.637C2.5231 17.4847 2.4375 17.278 2.4375 17.0625V8.9375C2.4375 8.72201 2.5231 8.51535 2.67548 8.36298C2.82785 8.2106 3.03451 8.125 3.25 8.125H5.6875" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.75 13H16.25" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M23.5625 13H25.1875" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M0.8125 13H2.4375" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="0,5" class="delivery__input">
+                                    </div>
+                                    <div class="delivery__items delivery__items-5">
+                                        <div class="delivery__subtitle">Дополнительные услуги:</div>
+                                        <svg class="delivery__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.3125 22.75H5.68746C5.47198 22.75 5.26532 22.6644 5.11296 22.512C4.96059 22.3596 4.87499 22.153 4.875 21.9375V4.0625C4.87499 3.84702 4.96059 3.64036 5.11296 3.48798C5.26532 3.33561 5.47198 3.25001 5.68746 3.25H15.4378L21.125 8.9375V21.9375C21.125 22.153 21.0394 22.3596 20.887 22.512C20.7347 22.6644 20.528 22.75 20.3125 22.75V22.75Z" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.4375 3.25V8.9375H21.1258" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.75 13.8125H16.25" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.75 17.0625H16.25" stroke="#1F2428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <select name="Страна" class="delivery__select">
+                                            <option class="delivery__option disabled" value="">Выберите услуги</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <a href="#" class="main-button green-button delivery__button">Рассчитать</a>
+                        </div>
+                    </div>
+            </div></section>
+            <section class="delivery-options">
+                <div class="container">
+                    <h2 class="delivery-options__title title">Варианты доставки:</h2>
+                    <ul class="delivery-options__list">
+                        <li class="delivery-options__items">
+                            <div class="delivery-options__left-block">
+                                <img src="./images/do-1..png" alt="" class="delivery-options__img">
+                                <div class="delivery-options__text">Почта России</div>
+                            </div>
+                            <div class="delivery-options__right-block">
+                                <div class="delivery-options__right-box delivery-options__box-1">
+                                    <div class="delivery-options__small-text">Сроки:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">10-14 дней</div>
+                                </div>
+                                <div class="delivery-options__right-box delivery-options__box-2">
+                                    <div class="delivery-options__small-text">Стоимость доставки:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">от £27.00
+                                        <svg class="delivery-options__info" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8" r="8" fill="#C0C9D7"/>
+                                            <path d="M9.37987 10.6423L9.27284 11.0797C8.95178 11.2065 8.69531 11.3029 8.50433 11.3692C8.31315 11.4357 8.091 11.4688 7.8379 11.4688C7.44922 11.4688 7.14689 11.3736 6.93127 11.1845C6.71565 10.9946 6.6078 10.754 6.6078 10.4621C6.6078 10.3491 6.61563 10.2329 6.6319 10.1145C6.6483 9.99593 6.67439 9.86241 6.71009 9.71317L7.11133 8.29299C7.14703 8.157 7.17737 8.02814 7.20167 7.90629C7.22632 7.7852 7.23819 7.67378 7.23819 7.57349C7.23819 7.39212 7.20064 7.26526 7.12589 7.19394C7.05113 7.12282 6.90848 7.08671 6.6967 7.08671C6.59297 7.08671 6.48636 7.10332 6.37769 7.13545C6.26854 7.16771 6.17525 7.19888 6.09692 7.22785L6.20422 6.79001C6.46707 6.68299 6.71832 6.59135 6.95866 6.51528C7.199 6.43902 7.42608 6.40085 7.64088 6.40085C8.02689 6.40085 8.32475 6.49414 8.53392 6.68072C8.74309 6.86745 8.84764 7.1095 8.84764 7.40777C8.84764 7.46949 8.84077 7.57823 8.82602 7.73364C8.8116 7.88941 8.78476 8.03212 8.74563 8.16194L8.3461 9.57643C8.31335 9.69004 8.2839 9.81992 8.2583 9.96607C8.23187 10.1113 8.21924 10.2222 8.21924 10.2966C8.21924 10.4844 8.26111 10.6127 8.34507 10.6808C8.42964 10.749 8.57531 10.7829 8.78222 10.7829C8.87935 10.7829 8.98988 10.7657 9.11269 10.7318C9.23516 10.698 9.32447 10.6683 9.37987 10.6423ZM9.48119 4.70381C9.48119 4.95025 9.38831 5.16073 9.20166 5.33379C9.01548 5.50747 8.79114 5.59437 8.5287 5.59437C8.26544 5.59437 8.04055 5.50747 7.85225 5.33379C7.66429 5.16066 7.5701 4.95025 7.5701 4.70381C7.5701 4.45784 7.66429 4.24702 7.85225 4.07177C8.0402 3.89678 8.26551 3.80933 8.5287 3.80933C8.79107 3.80933 9.01548 3.89699 9.20166 4.07177C9.38845 4.24702 9.48119 4.45791 9.48119 4.70381Z" fill="#F2F6FC"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="delivery-options__right-box delivery-options__box-3">
+                                    <div class="delivery-options__small-text">Итого:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">£41.99</div>
+                                </div>
+                                <svg class="delivery-options__arrow-down" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="delivery-options__items">
+                            <div class="delivery-options__left-block">
+                                <img src="./images/do-2..png" alt="" class="delivery-options__img">
+                                <div class="delivery-options__text">EMS ПОЧТА РОССИЯ</div>
+                            </div>
+                            <div class="delivery-options__right-block">
+                                <div class="delivery-options__right-box delivery-options__box-1">
+                                    <div class="delivery-options__small-text">Сроки:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">9-12 дней</div>
+                                </div>
+                                <div class="delivery-options__right-box delivery-options__box-2">
+                                    <div class="delivery-options__small-text">Стоимость доставки:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">от £40.00
+                                        <svg class="delivery-options__info" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8" r="8" fill="#C0C9D7"/>
+                                            <path d="M9.37987 10.6423L9.27284 11.0797C8.95178 11.2065 8.69531 11.3029 8.50433 11.3692C8.31315 11.4357 8.091 11.4688 7.8379 11.4688C7.44922 11.4688 7.14689 11.3736 6.93127 11.1845C6.71565 10.9946 6.6078 10.754 6.6078 10.4621C6.6078 10.3491 6.61563 10.2329 6.6319 10.1145C6.6483 9.99593 6.67439 9.86241 6.71009 9.71317L7.11133 8.29299C7.14703 8.157 7.17737 8.02814 7.20167 7.90629C7.22632 7.7852 7.23819 7.67378 7.23819 7.57349C7.23819 7.39212 7.20064 7.26526 7.12589 7.19394C7.05113 7.12282 6.90848 7.08671 6.6967 7.08671C6.59297 7.08671 6.48636 7.10332 6.37769 7.13545C6.26854 7.16771 6.17525 7.19888 6.09692 7.22785L6.20422 6.79001C6.46707 6.68299 6.71832 6.59135 6.95866 6.51528C7.199 6.43902 7.42608 6.40085 7.64088 6.40085C8.02689 6.40085 8.32475 6.49414 8.53392 6.68072C8.74309 6.86745 8.84764 7.1095 8.84764 7.40777C8.84764 7.46949 8.84077 7.57823 8.82602 7.73364C8.8116 7.88941 8.78476 8.03212 8.74563 8.16194L8.3461 9.57643C8.31335 9.69004 8.2839 9.81992 8.2583 9.96607C8.23187 10.1113 8.21924 10.2222 8.21924 10.2966C8.21924 10.4844 8.26111 10.6127 8.34507 10.6808C8.42964 10.749 8.57531 10.7829 8.78222 10.7829C8.87935 10.7829 8.98988 10.7657 9.11269 10.7318C9.23516 10.698 9.32447 10.6683 9.37987 10.6423ZM9.48119 4.70381C9.48119 4.95025 9.38831 5.16073 9.20166 5.33379C9.01548 5.50747 8.79114 5.59437 8.5287 5.59437C8.26544 5.59437 8.04055 5.50747 7.85225 5.33379C7.66429 5.16066 7.5701 4.95025 7.5701 4.70381C7.5701 4.45784 7.66429 4.24702 7.85225 4.07177C8.0402 3.89678 8.26551 3.80933 8.5287 3.80933C8.79107 3.80933 9.01548 3.89699 9.20166 4.07177C9.38845 4.24702 9.48119 4.45791 9.48119 4.70381Z" fill="#F2F6FC"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="delivery-options__right-box delivery-options__box-3">
+                                    <div class="delivery-options__small-text">Итого:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">£54.55</div>
+                                </div>
+                                <svg class="delivery-options__arrow-down" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="delivery-options__items">
+                            <div class="delivery-options__left-block">
+                                <img src="./images/do-3..png" alt="" class="delivery-options__img">
+                                <div class="delivery-options__text">ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ</div>
+                            </div>
+                            <div class="delivery-options__right-block">
+                                <div class="delivery-options__right-box delivery-options__box-1">
+                                    <div class="delivery-options__small-text">Сроки:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">10-14 дней</div>
+                                </div>
+                                <div class="delivery-options__right-box delivery-options__box-2">
+                                    <div class="delivery-options__small-text">Стоимость доставки:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">от £13.00
+                                        <svg class="delivery-options__info" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8" r="8" fill="#C0C9D7"/>
+                                            <path d="M9.37987 10.6423L9.27284 11.0797C8.95178 11.2065 8.69531 11.3029 8.50433 11.3692C8.31315 11.4357 8.091 11.4688 7.8379 11.4688C7.44922 11.4688 7.14689 11.3736 6.93127 11.1845C6.71565 10.9946 6.6078 10.754 6.6078 10.4621C6.6078 10.3491 6.61563 10.2329 6.6319 10.1145C6.6483 9.99593 6.67439 9.86241 6.71009 9.71317L7.11133 8.29299C7.14703 8.157 7.17737 8.02814 7.20167 7.90629C7.22632 7.7852 7.23819 7.67378 7.23819 7.57349C7.23819 7.39212 7.20064 7.26526 7.12589 7.19394C7.05113 7.12282 6.90848 7.08671 6.6967 7.08671C6.59297 7.08671 6.48636 7.10332 6.37769 7.13545C6.26854 7.16771 6.17525 7.19888 6.09692 7.22785L6.20422 6.79001C6.46707 6.68299 6.71832 6.59135 6.95866 6.51528C7.199 6.43902 7.42608 6.40085 7.64088 6.40085C8.02689 6.40085 8.32475 6.49414 8.53392 6.68072C8.74309 6.86745 8.84764 7.1095 8.84764 7.40777C8.84764 7.46949 8.84077 7.57823 8.82602 7.73364C8.8116 7.88941 8.78476 8.03212 8.74563 8.16194L8.3461 9.57643C8.31335 9.69004 8.2839 9.81992 8.2583 9.96607C8.23187 10.1113 8.21924 10.2222 8.21924 10.2966C8.21924 10.4844 8.26111 10.6127 8.34507 10.6808C8.42964 10.749 8.57531 10.7829 8.78222 10.7829C8.87935 10.7829 8.98988 10.7657 9.11269 10.7318C9.23516 10.698 9.32447 10.6683 9.37987 10.6423ZM9.48119 4.70381C9.48119 4.95025 9.38831 5.16073 9.20166 5.33379C9.01548 5.50747 8.79114 5.59437 8.5287 5.59437C8.26544 5.59437 8.04055 5.50747 7.85225 5.33379C7.66429 5.16066 7.5701 4.95025 7.5701 4.70381C7.5701 4.45784 7.66429 4.24702 7.85225 4.07177C8.0402 3.89678 8.26551 3.80933 8.5287 3.80933C8.79107 3.80933 9.01548 3.89699 9.20166 4.07177C9.38845 4.24702 9.48119 4.45791 9.48119 4.70381Z" fill="#F2F6FC"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="delivery-options__right-box delivery-options__box-3">
+                                    <div class="delivery-options__small-text">Итого:</div>
+                                    <div class="delivery-options__text delivery-options__text--size">£90.50</div>
+                                </div>
+                                <svg class="delivery-options__arrow-down" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="fast-buy">
+                <div class="container">
+                    <h2 class="fast-buy__title title">4 простых шага для ваших покупок в Великобритании </h2>
+                    <ul class="fast-buy__list">
+                        <li class="fast-buy__item">
+                            <img src="./images/fb-1..png" alt="" class="fast-buy__img">
+                            <div class="fast-buy__subtitle">вы ВЫБИРАЕТЕ <br> ТОВАР</div>
+                            <div class="fast-buy__item-text">в английском магазине, оплачиваете и <br> указываете <a href="#" class="fast-buy--green-text">адрес склада</a> OkeyPost</div>
+                        </li>
+                        <li class="fast-buy__item">
+                            <img src="./images/fb-2..png" alt="" class="fast-buy__img">
+                            <div class="fast-buy__subtitle">ПОКУПКИ ПРИХОДЯТ <br> НА СКЛАД</div>
+                            <div class="fast-buy__item-text">и появляются в вашем личном кабинете <br> на нашем сайте
+                            </div>
+                        </li>
+                        <li class="fast-buy__item">
+                            <img src="./images/fb-3..png" alt="" class="fast-buy__img">
+                            <div class="fast-buy__subtitle">ОТПРАВЛЯЕМ ИХ <br> К ВАМ ДОМОЙ</div>
+                            <div class="fast-buy__item-text">в надежной упаковке, по выгодной <br> цене и очень быстро
+                            </div>
+                        </li>
+                        <li class="fast-buy__item">
+                            <img src="./images/fb-4..png" alt="" class="fast-buy__img">
+                            <div class="fast-buy__subtitle">ЗАБИРАЕТЕ <br> свою ПОСЫЛКУ</div>
+                            <div class="fast-buy__item-text">в пункте выдачи, на почте <br> или с курьером</div>
+                        </li>
+                    </ul>
+                    <div class="fast-buy__text">Не хотите разбираться самостоятельно, наши мастера шопинга с радостью
+                        купят все товары за вас.</div>
+                    <a href="#" class="main-button green-button">Быстрая покупка</a>
+                </div>
+            </section>
+            <section class="tour">
+                <div class="second-container">
+                    <div class="tour__card card">
+                        <div class="container tour__row">
+                            <div class="tour__img-block">
+                                <img src="./images/t1..png" alt="" class="tour__img">
+                            </div>
+                            <div class="tour__box">
+                                <h2 class="tour__title title card-title">Виртуальный тур по нашему складу в реальном времени</h2>
+                                <div class="tour__text">Вы можете всегда посмотреть на нашу слаженую работу на складе
+                                </div>
+                                <a href="#" class="main-button green-button">Попробовать</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="reviews__title title">120 000 довольных клиентов в России уже сделали свой выбор</h2>
+                    <div class="reviews__text">За последний год десятки тысяч наших клиентов заказали товары из Англии и
+                        оставили 19 633 отзыва</div>
+                    <div class="reviews__grid-1">
+                        <div class="reviews__row-box">
+                            <img src="./images/r1..png" alt="" class="reviews__icon">
+                            <div class="reviews__row-text">Больше не значит дороже</div>
+                            <div class="reviews__small-text">С ростом веса посылки цена за каждые 0.5 кг уменьшается в
+                                прогрессии.</div>
+                        </div>
+                        <div class="reviews__row-box">
+                            <img src="./images/r2..png" alt="" class="reviews__icon">
+                            <div class="reviews__row-text">Быстрая обработка посылок</div>
+                            <div class="reviews__small-text">Посылка обрабатывается не дольше 48 часов после поступления
+                                на склад.</div>
+                        </div>
+                        <div class="reviews__row-box">
+                            <img src="./images/r3..png" alt="" class="reviews__icon">
+                            <div class="reviews__row-text">SMS-уведомления</div>
+                            <div class="reviews__small-text">Отслеживайте весь процесс с помощью sms-уведомлений.</div>
+                        </div>
+
+                    </div>
+                    <h2 class="reviews__subtitle">Отзывы и цитаты блогеров:</h2>
+                    <div class="reviews__grid">
+                        <div class="reviews__grid-card">
+                            <div class="reviews__row">
+                                <img src="./images/reviews1..png" alt="" class="reviews__card-img">
+                                <div class="reviews__right-block">
+                                    <div class="reviews__card-title">NIKOLAY S</div>
+                                    <svg class="reviews__stars" width="89" height="17" viewBox="0 0 89 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.41892 0L10.8932 5.01339L16.4258 5.81733L12.4224 9.71971L13.3674 15.23L8.41892 12.6284L3.4704 15.23L4.41548 9.71971L0.412051 5.81733L5.94466 5.01339L8.41892 0Z" fill="#FFA009"/>
+                                        <path d="M26.4594 0L28.9337 5.01339L34.4663 5.81733L30.4629 9.71971L31.408 15.23L26.4594 12.6284L21.5109 15.23L22.456 9.71971L18.4526 5.81733L23.9852 5.01339L26.4594 0Z" fill="#FFA009"/>
+                                        <path d="M44.5 0L46.9742 5.01339L52.5068 5.81733L48.5034 9.71971L49.4485 15.23L44.5 12.6284L39.5515 15.23L40.4965 9.71971L36.4931 5.81733L42.0257 5.01339L44.5 0Z" fill="#FFA009"/>
+                                        <path d="M62.5406 0L65.0148 5.01339L70.5474 5.81733L66.544 9.71971L67.4891 15.23L62.5406 12.6284L57.592 15.23L58.5371 9.71971L54.5337 5.81733L60.0663 5.01339L62.5406 0Z" fill="#FFA009"/>
+                                        <path d="M80.5811 0L83.0553 5.01339L88.588 5.81733L84.5845 9.71971L85.5296 15.23L80.5811 12.6284L75.6326 15.23L76.5777 9.71971L72.5742 5.81733L78.1068 5.01339L80.5811 0Z" fill="#FFA009"/>
+                                    </svg>
+                                    <div class="reviews__card-text">Ваша доставка самая быстрая и дешёвая!!!</div>
+                                    <div class="reviews__info-block">
+                                        <div class="reviews__info-box">
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Дата:</div>
+                                                <div class="reviews__info-text">16 Ноября 2021</div>
+                                            </div>
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Город:</div>
+                                                <div class="reviews__info-text">Санкт-Петербург</div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__grid-card">
+                            <div class="reviews__row">
+                                <img src="./images/reviews2..png" alt="" class="reviews__card-img">
+                                <div class="reviews__right-block">
+                                    <div class="reviews__card-title">DMITRIY D</div>
+                                    <svg class="reviews__stars" width="89" height="17" viewBox="0 0 89 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.41892 0L10.8932 5.01339L16.4258 5.81733L12.4224 9.71971L13.3674 15.23L8.41892 12.6284L3.4704 15.23L4.41548 9.71971L0.412051 5.81733L5.94466 5.01339L8.41892 0Z" fill="#FFA009"/>
+                                        <path d="M26.4594 0L28.9337 5.01339L34.4663 5.81733L30.4629 9.71971L31.408 15.23L26.4594 12.6284L21.5109 15.23L22.456 9.71971L18.4526 5.81733L23.9852 5.01339L26.4594 0Z" fill="#FFA009"/>
+                                        <path d="M44.5 0L46.9742 5.01339L52.5068 5.81733L48.5034 9.71971L49.4485 15.23L44.5 12.6284L39.5515 15.23L40.4965 9.71971L36.4931 5.81733L42.0257 5.01339L44.5 0Z" fill="#FFA009"/>
+                                        <path d="M62.5406 0L65.0148 5.01339L70.5474 5.81733L66.544 9.71971L67.4891 15.23L62.5406 12.6284L57.592 15.23L58.5371 9.71971L54.5337 5.81733L60.0663 5.01339L62.5406 0Z" fill="#FFA009"/>
+                                        <path d="M80.5811 0L83.0553 5.01339L88.588 5.81733L84.5845 9.71971L85.5296 15.23L80.5811 12.6284L75.6326 15.23L76.5777 9.71971L72.5742 5.81733L78.1068 5.01339L80.5811 0Z" fill="#FFA009"/>
+                                    </svg>
+                                    <div class="reviews__card-text">Пуховик Levi’s c eBay. Всё приехало быстро и целым.
+                                    </div>
+                                    <div class="reviews__info-block">
+                                        <div class="reviews__info-box">
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Дата:</div>
+                                                <div class="reviews__info-text">16 Ноября 2021</div>
+                                            </div>
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Город:</div>
+                                                <div class="reviews__info-text">Москва</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__grid-card">
+                            <div class="reviews__row">
+                                <img src="./images/reviews3..png" alt="" class="reviews__card-img">
+                                <div class="reviews__right-block">
+                                    <div class="reviews__card-title">VLADIMIR E</div>
+                                    <svg class="reviews__stars" width="89" height="17" viewBox="0 0 89 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.41892 0L10.8932 5.01339L16.4258 5.81733L12.4224 9.71971L13.3674 15.23L8.41892 12.6284L3.4704 15.23L4.41548 9.71971L0.412051 5.81733L5.94466 5.01339L8.41892 0Z" fill="#FFA009"/>
+                                        <path d="M26.4594 0L28.9337 5.01339L34.4663 5.81733L30.4629 9.71971L31.408 15.23L26.4594 12.6284L21.5109 15.23L22.456 9.71971L18.4526 5.81733L23.9852 5.01339L26.4594 0Z" fill="#FFA009"/>
+                                        <path d="M44.5 0L46.9742 5.01339L52.5068 5.81733L48.5034 9.71971L49.4485 15.23L44.5 12.6284L39.5515 15.23L40.4965 9.71971L36.4931 5.81733L42.0257 5.01339L44.5 0Z" fill="#FFA009"/>
+                                        <path d="M62.5406 0L65.0148 5.01339L70.5474 5.81733L66.544 9.71971L67.4891 15.23L62.5406 12.6284L57.592 15.23L58.5371 9.71971L54.5337 5.81733L60.0663 5.01339L62.5406 0Z" fill="#FFA009"/>
+                                        <path d="M80.5811 0L83.0553 5.01339L88.588 5.81733L84.5845 9.71971L85.5296 15.23L80.5811 12.6284L75.6326 15.23L76.5777 9.71971L72.5742 5.81733L78.1068 5.01339L80.5811 0Z" fill="#FFA009"/>
+                                    </svg>
+                                    <div class="reviews__card-text">Огонь, как всегда! Отдельное спасибо за
+                                        доп.упаковку, часики от Apple пришли в простом бумажном пакете )</div>
+                                    <div class="reviews__info-block">
+                                        <div class="reviews__info-box">
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Дата:</div>
+                                                <div class="reviews__info-text">16 Ноября 2021</div>
+                                            </div>
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Город:</div>
+                                                <div class="reviews__info-text">Санкт-Петербург</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__grid-card">
+                            <div class="reviews__row">
+                                <img src="./images/reviews4..png" alt="" class="reviews__card-img">
+                                <div class="reviews__right-block">
+                                    <div class="reviews__card-title">Оксана</div>
+                                    <svg class="reviews__stars" width="89" height="17" viewBox="0 0 89 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.41892 0L10.8932 5.01339L16.4258 5.81733L12.4224 9.71971L13.3674 15.23L8.41892 12.6284L3.4704 15.23L4.41548 9.71971L0.412051 5.81733L5.94466 5.01339L8.41892 0Z" fill="#FFA009"/>
+                                        <path d="M26.4594 0L28.9337 5.01339L34.4663 5.81733L30.4629 9.71971L31.408 15.23L26.4594 12.6284L21.5109 15.23L22.456 9.71971L18.4526 5.81733L23.9852 5.01339L26.4594 0Z" fill="#FFA009"/>
+                                        <path d="M44.5 0L46.9742 5.01339L52.5068 5.81733L48.5034 9.71971L49.4485 15.23L44.5 12.6284L39.5515 15.23L40.4965 9.71971L36.4931 5.81733L42.0257 5.01339L44.5 0Z" fill="#FFA009"/>
+                                        <path d="M62.5406 0L65.0148 5.01339L70.5474 5.81733L66.544 9.71971L67.4891 15.23L62.5406 12.6284L57.592 15.23L58.5371 9.71971L54.5337 5.81733L60.0663 5.01339L62.5406 0Z" fill="#FFA009"/>
+                                        <path d="M80.5811 0L83.0553 5.01339L88.588 5.81733L84.5845 9.71971L85.5296 15.23L80.5811 12.6284L75.6326 15.23L76.5777 9.71971L72.5742 5.81733L78.1068 5.01339L80.5811 0Z" fill="#FFA009"/>
+                                    </svg>
+                                    <div class="reviews__card-text">Очень быстро, надежно! Как всегда большое спасибо за
+                                        работу!</div>
+                                    <div class="reviews__info-block">
+                                        <div class="reviews__info-box">
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Дата:</div>
+                                                <div class="reviews__info-text">16 Ноября 2021</div>
+                                            </div>
+                                            <div class="reviews__info-flex">
+                                                <div class="reviews__info-bold-text">Город:</div>
+                                                <div class="reviews__info-text">Odintsovo</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="main-button green-button reviews__button">Все отзывы</a>
+                </div>
+            </section>
+            <section class="info">
+                <div class="container">
+                    <div class="info__title title">Ваш личный адрес в Великобритании для покупок</div>
+                    <div class="info__text">С нами вы получаете целых два адреса в UK! У нас есть два склада для приема
+                        посылок – в Лондоне и Манчестере. Указывайте в магазине тот из них, отправка на который
+                        обойдется дешевле (или покупка будет без налогов). Чаще всего в Лондоне наши клиенты заказывают
+                        одежду и обувь, а в Манчестер идут гаджеты и всё остальное. С OkeyPost вы всегда получаете
+                        максимальную выгоду! </div>
+                    <div class="info__text">При доставке из UK в Россию все ваши товары обязательно страхуются. Прием
+                        посылок на наш склад, их обработка, удаление лишних коробок, хранение сроком до 70 дней – у нас
+                        полностью бесплатно. Мы также бесплатно проводим объединение посылок из разных магазинов в одну.
+                        Это необходимо для снижения стоимости доставки посылок из UK в Россию.</div>
+                    <div class="info__text"> У нас самая выгодная доставка! От $11.99 за посылку! А если у вас есть
+                        какие-то особенные требования, вроде проверки техники или дополнительной пленки для самых
+                        хрупких товаров, – операторы нашего склада с радостью выполнят их по спецзапросу.</div>
+                    <div class="info__text">Okeypost.com – это надежно, быстро и выгодно. А в наших соцсетях вы всегда
+                        найдете информацию о лучших скидках fyukbqcrb[ магазинов. Не обязательно заходить в Черную
+                        пятницу или Prime Day, крутые акции проходят каждый день!</div>
+                </div>
+            </section>
+            <section class="subscription">
+                <div class="second-container">
+                    <div class="subscription__card card">
+                        <div class="container">
+                            <div class="flex-row subscription__row">
+                                <h2 class="subscription__title card-title">Подпишитеть и будьте в курсе всех скидок и акций
+                                    магазинов Великобритании!</h2>
+                                    <div class="flex-row subscription__row-padding">
+                                        <div class="subscription__input-box">
+                                            <i class="subscription__svg">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.25 9.75V20.3125C3.25 20.528 3.3356 20.7347 3.48798 20.887C3.64035 21.0394 3.84701 21.125 4.0625 21.125H21.9375C22.153 21.125 22.3597 21.0394 22.512 20.887C22.6644 20.7347 22.75 20.528 22.75 20.3125V9.75L13 3.25L3.25 9.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M22.75 9.75L14.7728 15.4375H11.2272L3.25 9.75" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </i>
+                                            <input type="email" placeholder="Введите ваш email" class="subscription__input">
+                                        </div>
+                                        <a href="#" class="main-button green-button subscription__button">Подписаться</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+
+                    <div class="footer__box footer__box-1">
+                        <a href="./index.html" class="footer__logo-link">
+                            <img src="./images/logo..png" alt="" class="footer__img">
+                        </a>
+                        <div class="footer__icons-block">
+                            <a href="#" class="footer__icons-link">
+                                <img src="./images/f1..png" alt="" class="footer__icon">
+                            </a>
+                            <a href="#" class="footer__icons-link">
+                                <img src="./images/f2..png" alt="" class="footer__icon">
+                            </a>
+                            <a href="#" class="footer__icons-link">
+                                <img src="./images/f3..png" alt="" class="footer__icon">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="flex-row footer__row">
+                        <div class="footer__box footer__box-2">
+                            <a href="./index.html" class="footer__logo-link">
+                                <img src="./images/logo..png" alt="" class="footer__img">
+                            </a>
+                            <div class="footer__icons-block">
+                                <a href="#" class="footer__icons-link">
+                                    <img src="./images/f1..png" alt="" class="footer__icon">
+                                </a>
+                                <a href="#" class="footer__icons-link">
+                                    <img src="./images/f2..png" alt="" class="footer__icon">
+                                </a>
+                                <a href="#" class="footer__icons-link">
+                                    <img src="./images/f3..png" alt="" class="footer__icon">
+                                </a>
+                            </div>
+    
+                        </div>
+                        <div class="footer__box">
+                            <div class="footer__title">О компании</div>
+                            <a href="#" class="footer__text">Услуги </a>
+                            <a href="#" class="footer__text">Цены </a>
+                            <a href="#" class="footer__text">Отзывы </a>
+                            <a href="#" class="footer__text">Контакты </a>
+                            <a href="#" class="footer__text">Вакансии</a>
+                            <a href="#" class="footer__text">Соглашение о персональных данных </a>
+                            <a href="#" class="footer__text">Условия использования</a>
+                        </div>
+                        <div class="footer__box">
+                            <div class="footer__title">Полезное</div>
+                            <a href="#" class="footer__text">Как работает наш сервис </a>
+                            <a href="#" class="footer__text">Как покупать с оператором </a>
+                            <a href="#" class="footer__text">Ответы на частые вопросы </a>
+                            <a href="#" class="footer__text">Популярные магазины</a>
+                            <a href="#" class="footer__text">Черный список магазинов </a>
+                            <a href="#" class="footer__text">Актуальные распродажи</a>
+                        </div>
+                        <div class="footer__box">
+                            <div class="footer__title">Спецпроекты</div>
+                            <a href="#" class="footer__text">50% на первую доставку</a>
+                            <a href="#" class="footer__text">Скидки для постоянных клиентов</a>
+                            <a href="#" class="footer__text">Реферальная программа </a>
+                            <a href="#" class="footer__text">Кэшбек Mr. Rebates и Rakuten</a>
+                            <a href="#" class="footer__text">Stop Fraud</a>
+                        </div>
+                    </div>
+
+
+
+            </div>
+            <div class="footer__down-text">© 2021 Okeypost . Все права защищены.</div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./images/slider..js"></script> 
+</body>
+
+</html>

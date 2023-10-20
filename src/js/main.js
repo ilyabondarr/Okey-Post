@@ -10,7 +10,6 @@ import "../blog.html"
 import "../scss/media.css";
 import './choices.min.js';
 import '../scss/choices.min.css';
- 
 
 
 const defaulSelect = () => {
