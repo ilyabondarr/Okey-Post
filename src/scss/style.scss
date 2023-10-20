@@ -313,6 +313,7 @@ img:hover {
     display: -ms-flexbox;
     display: flex;
 }
+ 
 
 .categories {
     margin-bottom: 78px;
@@ -1954,6 +1955,7 @@ img:hover {
         box-shadow: -8px 8px 14px 1px rgba(34, 60, 80, 0.22);
         width: 270px;
         text-align: center;
+        border-radius: 10px;
  
     }
     &__image-container {
